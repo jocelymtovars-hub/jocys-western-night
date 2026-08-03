@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const sobre = document.querySelector(".sobre");
+const sobre = document.getElementById("sobre");
+const portada = document.getElementById("portada");
+const invitacion = document.getElementById("invitacion");
+
 
 sobre.addEventListener("click", () => {
 
-alert("Bienvenido a Jocy's Western Night 🤎");
+    portada.classList.add("ocultar");
+
+    invitacion.classList.add("mostrar");
 
 });
 
