@@ -50,3 +50,70 @@ p {
 .sobre:hover {
     transform: scale(1.1) rotate(-3deg);
 }
+
+.invitacion {
+    display: none;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4e6d2;
+    color: #5a3825;
+    box-sizing: border-box;
+}
+
+.invitacion h1 {
+    font-size: 40px;
+    color: #6b3e22;
+}
+
+.invitacion h2 {
+    font-size: 30px;
+    margin: 15px;
+}
+
+.invitacion p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.datos {
+    background: rgba(255,255,255,0.45);
+    border: 2px solid #8b5e3c;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 350px;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #6b3e22;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mostrar {
+    display: block;
+    animation: aparecer 1.5s ease;
+}
+
+.ocultar {
+    display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
