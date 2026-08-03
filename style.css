@@ -181,3 +181,32 @@ body::after {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+
+.sobre {
+    background: linear-gradient(145deg, #9b6b43, #6b3e22);
+    border: 4px solid #c59b62;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre::before {
+    content: "J";
+    position: absolute;
+    font-size: 80px;
+    color: #f4e6d2;
+    font-family: Georgia, serif;
+}
+
+.sobre {
+    animation: flotar 2s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
