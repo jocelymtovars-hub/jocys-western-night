@@ -117,3 +117,67 @@ button {
         transform: translateY(0);
     }
 }
+
+
+.contador {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 350px;
+    background: rgba(255,255,255,0.5);
+    border: 2px solid #8b5e3c;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.contador h3 {
+    font-size: 25px;
+    color: #6b3e22;
+    margin-bottom: 15px;
+}
+
+#tiempo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5a3825;
+}
+
+
+button {
+    width: 260px;
+    transition: .3s;
+    border: 2px solid #c59b62;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+body::before {
+    content: "✦  ✧  ✦";
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #b8864a;
+}
+
+body::after {
+    content: "✧  ✦  ✧";
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #b8864a;
+}
+
+
+.invitacion {
+    border: 10px solid #8b5e3c;
+}
+
+
+.invitacion h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
